@@ -1,0 +1,25 @@
+:root {
+    --bs-btn-bg: #873c83;
+    --bs-btn-border-color: #873c83;
+    --bs-btn-hover-border-color: #c364be;
+    --bs-btn-hover-bg: #c364be;
+}
+
+.top-navbar {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link a.active {
+    color: #873c83;;
+}
