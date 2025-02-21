@@ -1,0 +1,31 @@
+.embed-container iframe {
+    height: 100%;
+}
+
+.icon-wrapper {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.embed-container {
+    height: 700px;
+
+@media (max-width: 1200px) {
+    .embed-container {
+        height: 50vw;
+    }
+}
+@media (max-width: 768px) {
+    .embed-container {
+        height: 60vw;
+    }
+}
+@media (max-width: 576px) {
+    .embed-container {
+        height: 70vw;
+    }

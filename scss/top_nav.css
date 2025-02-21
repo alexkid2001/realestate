@@ -10,6 +10,10 @@
     margin-right: auto
 }
 
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+
 .nav-item {
     font-size: 1.3rem;
     color: black;
@@ -20,6 +24,21 @@
     color: black;
 }
 
-.nav-link a.active {
-    color: #873c83;;
+.nav-link.active.text-primary {
+    color: #873c83 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    display: none;
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
 }
