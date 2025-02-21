@@ -1,0 +1,24 @@
+.info-section {
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 2rem;
+    width: 50%
+}
+.info-icon {
+    width: 20px;
+}
+.info-content h6 {
+    margin: 0;
+    font-weight: bold;
+}
+.info-content p {
+    margin: 0;
+}
