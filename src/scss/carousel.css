@@ -14,6 +14,7 @@
 
 .embed-container {
     height: 700px;
+}
 
 @media (max-width: 1200px) {
     .embed-container {
@@ -29,3 +30,72 @@
     .embed-container {
         height: 70vw;
     }
+}
+
+.gallery-swiper.swiper-container {
+    overflow: hidden;
+}
+
+.thumbnails-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.thumbnails-swiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.thumbnails-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.thumbnails-swiper .swiper-wrapper {
+    justify-content: center;
+}
+
+.thumbnails-swiper.swiper {
+    width: 100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+.fullscreen-modal .swiper-container {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+.fullscreen-modal .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.fullscreen-modal .swiper-slide {
+    display: flex;
+    align-items: center;
+}
