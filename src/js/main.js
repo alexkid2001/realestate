@@ -1,7 +1,3 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-
-
 const thumbnailsSwiper = new Swiper('.thumbnails-swiper', {
     slidesPerView: 10,
     spaceBetween: 10,
