@@ -12,3 +12,12 @@
 .company-card__link {
 
 }
+
+.company-swiper {
+    height: 500px;
+}
+
+.company-swiper .swiper-wrapper {
+    min-width: 100%;
+    align-items: center;
+}

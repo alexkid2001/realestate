@@ -124,3 +124,11 @@
 .fullscreen-modal .swiper-button-prev:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: initial;
+    top: 50%;
+    transform: translateY(-50%);
+}
