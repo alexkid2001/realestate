@@ -47,10 +47,20 @@
     </div>
 </nav>
 
-<header class="bg-dark text-white text-center py-5">
-    <h1 class="fw-bold">SERVICES</h1>
-    <p class="lead">Innovative solutions to your problems</p>
-</header>
+<nav class="pagenav">
+    <button class="pagenav-toggler" data-bs-toggle="collapse" data-bs-target="#pagenav">
+        <i class="fa fa-bars fa-lg"></i>
+    </button>
+    <div class="collapse position-absolute w-100" id="pagenav">
+        <ul class="pagenav-nav">
+            <li class="nav-item"><a class="nav-link" href="#documents"><i class="fa fa-file-o fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery"><i class="fa fa-file-image-o fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#models"><i class="fa fa-cubes fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#offers"><i class="fa fa-user-md fa-lg"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><i class="fa fa-list-ul fa-lg"></i></a></li>
+        </ul>
+    </div>
+</nav>
 
 <section class="container py-5">
     <div class="row info-section">
@@ -145,7 +155,7 @@
         <div class="row">
             <div class="col-12">
                 <style>/*! elementor - v3.18.0 - 08-12-2023 */
-                                                                                    .elementor-widget-google_maps .elementor-widget-container{overflow:hidden}.elementor-widget-google_maps .elementor-custom-embed{line-height:0}.elementor-widget-google_maps iframe{height:300px}
+                .elementor-widget-google_maps .elementor-widget-container{overflow:hidden}.elementor-widget-google_maps .elementor-custom-embed{line-height:0}.elementor-widget-google_maps iframe{height:300px}
                 </style>
                 <div class="elementor-custom-embed">
                     <iframe
@@ -164,7 +174,37 @@
     </div>
 </section>
 
-<section class="container py-5">
+<section class="container py-5" id="documents">
+    <h2 class="text-center mb-4">Documents</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Кадастровый сертификат</h5>
+                    <a href="https://estatedata.cloud/wp-content/uploads/2023/06/Agreement.pdf" class="btn btn-primary w-100">Скачать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">2D План (PDF + DWG)</h5>
+                    <a href="https://estatedata.cloud/wp-content/uploads/2023/06/actualFloorplan.pdf" class="btn btn-primary w-100">Скачать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Отчет об измерениях</h5>
+                    <a href="https://estatedata.cloud/wp-content/uploads/2023/06/actualFloorplan.pdf" class="btn btn-primary w-100">Скачать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5" id="gallery">
     <h2 class="text-center mb-4">Gallery</h2>
     <div class="swiper-container gallery-swiper">
         <div class="swiper-wrapper">
@@ -243,7 +283,7 @@
 </div>
 
 
-<section class="container py-5">
+<section class="container py-5" id="models">
     <h2 class="text-center mb-4">3D Models</h2>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
@@ -287,7 +327,106 @@
     </div>
 </section>
 
+<section class="container py-5" id="offers">
+    <h2 class="text-center mb-4">Offers by Top Partners</h2>
+    <div class="row g-3">
+        <!-- Offer 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card partner-offer">
+                <div class="partner-offer_header">
+                    <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
+                    <div class="partner-offer_title">
+                        <h5 class="card-title">OfferTitle25</h5>
+                        <p>Date | Company ABC</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some short description about the offer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card partner-offer">
+                <div class="partner-offer_header">
+                    <img src="assets/offer2.png" class="card-img-top" alt="Offer Image">
+                    <div class="partner-offer_title">
+                        <h5 class="card-title">OfferTitle2</h5>
+                        <p>Date | Company ABC</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some short description about the offer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card partner-offer">
+                <div class="partner-offer_header">
+                    <img src="assets/offer3.webp" class="card-img-top" alt="Offer Image">
+                    <div class="partner-offer_title">
+                        <h5 class="card-title">OfferTitle4</h5>
+                        <p>Date | Company ABC</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some short description about the offer.</p>
+                    <p class="card-text">Some short description about the offer.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Offer 4 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card partner-offer">
+                <div class="partner-offer_header">
+                    <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
+                    <div class="partner-offer_title">
+                        <h5 class="card-title">OfferTitle25</h5>
+                        <p>Date | Company ABC</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some short description about the offer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="container py-5">
+    <h2 class="text-center mb-4">My Tenders for this property:</hjson</h2>
+    <div class="row">
+        <div class="table-container border rounded p-2 mt-4">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Replies</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Object 1. Apartment renovation</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Object 1. Purchasing TV</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Object 2. Renovation</td>
+                    <td>12</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5" id="services">
     <h2 class="text-center mb-4">Services</h2>
     <div class="row g-3">
         <div class="col-md-3">
@@ -397,298 +536,6 @@
                 </figure>
                 <h4>Consumer Electronics</h4>
             </a>
-        </div>
-    </div>
-</section>
-
-<section class="container py-5 hidden" id="offers-container">
-    <h2 class="text-center mb-4">Test Dynamic offers</h2>
-    <div class="row g-4">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card partner-offer">
-                <div class="partner-offer_header">
-                    <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                    <div class="partner-offer_title">
-                        <h5 class="card-title">OfferTitle25</h5>
-                        <p>Date | Company ABC</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Some short description about the offer.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container py-5">
-    <h2 class="text-center mb-4">Компании в выбранной категории</h2>
-
-    <div class="row g-4">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card company-card p-3">
-                <img src="https://via.placeholder.com/100" class="card-img-top w-25 mx-auto" alt="Логотип компании">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Компания 1</h5>
-                    <p class="text-warning">⭐⭐⭐⭐☆</p>
-                    <p class="card-text">
-                        📍 Адрес: ул. Примерная, 5<br>
-                        📞 Тел: +7 (999) 123-45-67
-                    </p>
-                </div>
-                <a href="#" class="company-card__link"></a>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card company-card p-3">
-                <img src="https://via.placeholder.com/100" class="card-img-top w-25 mx-auto" alt="Логотип компании">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Компания 2</h5>
-                    <p class="text-warning">⭐⭐⭐⭐⭐</p>
-                    <p class="card-text">
-                        📍 Адрес: ул. Другая, 10<br>
-                        📞 Тел: +7 (999) 765-43-21
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card company-card p-3">
-                <img src="https://via.placeholder.com/100" class="card-img-top w-25 mx-auto" alt="Логотип компании">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Компания 3</h5>
-                    <p class="text-warning">⭐⭐⭐⭐☆</p>
-                    <p class="card-text">
-                        📍 Адрес: ул. Центральная, 15<br>
-                        📞 Тел: +7 (999) 333-22-11
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Пагинация -->
-    <nav class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled"><a class="page-link" href="#">← Назад</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Вперед →</a></li>
-        </ul>
-    </nav>
-
-</section>
-
-<section class="container py-5">
-    <h2 class="text-center mb-4">Chosen Offer Details</h2>
-    <div class="offer-card mb-4">
-        <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-                <img src="assets/QR%20code.png" alt="QR Code">
-                <p class="offer-number">34589</p>
-            </div>
-            <div class="col-md-9">
-                <h4 class="fw-bold text-success">Offer 3 Details:</h4>
-                <ul class="mb-2">
-                    <li>Images carousel</li>
-                    <li>Description</li>
-                    <li>Deadline (limited time offer)</li>
-                    <li>More detail...</li>
-                </ul>
-                <p><strong>Guidelines:</strong> Show QR code to redeem the offer.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container py-5">
-    <h2 class="text-center mb-4">All offers by this Partner (3):</h2>
-    <div class="row g-3">
-        <!-- Offer 1 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card partner-offer">
-                <div class="partner-offer_header">
-                    <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                    <div class="partner-offer_title">
-                        <h5 class="card-title">OfferTitle25</h5>
-                        <p>Date | Company ABC</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Some short description about the offer.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Offer 2 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card partner-offer">
-                <div class="partner-offer_header">
-                    <img src="assets/offer2.png" class="card-img-top" alt="Offer Image">
-                    <div class="partner-offer_title">
-                        <h5 class="card-title">OfferTitle2</h5>
-                        <p>Date | Company ABC</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Some short description about the offer.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Offer 3 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card partner-offer">
-                <div class="partner-offer_header">
-                    <img src="assets/offer3.webp" class="card-img-top" alt="Offer Image">
-                    <div class="partner-offer_title">
-                        <h5 class="card-title">OfferTitle4</h5>
-                        <p>Date | Company ABC</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Some short description about the offer.</p>
-                    <p class="card-text">Some short description about the offer.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Offer 4 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card partner-offer">
-                <div class="partner-offer_header">
-                    <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                    <div class="partner-offer_title">
-                        <h5 class="card-title">OfferTitle25</h5>
-                        <p>Date | Company ABC</p>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Some short description about the offer.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container py-5">
-    <h2 class="text-center mb-4">See our offers</h2>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">By Top Partners</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">By Partners</button>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <div class="container">
-                <div class="row g-3">
-                    <!-- Offer 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle25</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Offer 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer2.png" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle2</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Offer 3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer3.webp" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle4</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Offer 4 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle25</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="container">
-                <div class="row g-3">
-                    <!-- Offer 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer1.jpg" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle25</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Offer 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card partner-offer">
-                            <div class="partner-offer_header">
-                                <img src="assets/offer2.png" class="card-img-top" alt="Offer Image">
-                                <div class="partner-offer_title">
-                                    <h5 class="card-title">OfferTitle2</h5>
-                                    <p>Date | Company ABC</p>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some short description about the offer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

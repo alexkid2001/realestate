@@ -1,6 +1,13 @@
 :root {
     --bs-primary: #873c83;
     --bs-primary-rgb: 135, 60, 131;
+    --bs-link-color-rgb: #873c83;
+    --bs-link-hover-color-rgb: #873c83;
+}
+
+a {
+    color: var(--bs-link-color-rgb);
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -10,4 +17,42 @@
 
 .text-primary {
     color: var(--bs-primary);
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+}
+
+
+.pagenav {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.pagenav-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 10px;
+    gap: 10px;
 }
