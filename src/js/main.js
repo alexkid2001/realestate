@@ -79,6 +79,38 @@ document.querySelectorAll('.pagenav .nav-link').forEach(link => {
     link.addEventListener('click', () => collapseNavbar());
 })
 
+
+const scrollTopButton = document.querySelector(".scroll-top");
+
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+function toggleScrollButton() {
+    if (window.scrollY > window.innerHeight) {
+        scrollTopButton.classList.add("show");
+        scrollTopButton.classList.remove("hide");
+    } else {
+        scrollTopButton.classList.add("hide");
+        setTimeout(() => scrollTopButton.classList.remove("show"), 300); // Дождаться исчезновения перед скрытием
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+const debouncedToggle = debounce(toggleScrollButton, 100);
+
+window.addEventListener("scroll", debouncedToggle);
+scrollTopButton.addEventListener("click", scrollToTop);
+scrollTopButton?.addEventListener("click", scrollToTop);
+
+
 // function fetchOffers(catId) {
 //     const url = `https://go.estatedata.cloud/api/catalog/category/${catId}/offers`;
 //
