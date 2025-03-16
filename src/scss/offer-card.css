@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 1rem;
 }
 
 .partner-offer_title * {
