@@ -17,7 +17,50 @@
     height: 500px;
 }
 
+.company-swiper .swiper-slide {
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.company-swiper .swiper-slide.active {
+    box-shadow: #a100a1 0 0 10px;
+}
+
+@media (max-width: 768px) {
+    .company-swiper {
+        height: 300px;
+    }
+}
+
 .company-swiper .swiper-wrapper {
     min-width: 100%;
     align-items: center;
+}
+
+.card-header {
+    display: flex;
+    background: transparent;
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header_logo {
+    width: 70px;
+    height: 70px;
+}
+
+.card-header_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-header_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.text-warning {
+    font-size: 1rem;
 }
